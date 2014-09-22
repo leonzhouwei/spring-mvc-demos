@@ -15,7 +15,7 @@
         <encoder>
             <pattern>%d [%thread | %logger.%method\(%file:%line\)] %-5level - %msg%n</pattern>
         </encoder>
-        <file>logs/${LOG_FILE}</file>
+        <file>logs/com.example.springmvc.demo/${LOG_FILE}</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <fileNamePattern>${LOG_FILE}.%i</fileNamePattern>
         </rollingPolicy>
