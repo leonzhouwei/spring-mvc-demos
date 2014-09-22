@@ -25,7 +25,7 @@
         </triggeringPolicy>
     </appender>
     
-    <logger name="github.com.leonzhouwei.java.microservice" level="DEBUG">  
+    <logger name="com.example.springmvc.demo" level="INFO">  
         <appender-ref ref="FILE" />  
     </logger>  
 
