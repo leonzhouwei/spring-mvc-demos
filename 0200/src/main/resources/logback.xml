@@ -13,7 +13,7 @@
         <encoder>
             <pattern>%d [%thread | %logger.%method\(%file:%line\)] %-5level - %msg%n</pattern>
         </encoder>
-        <file>log.log</file>
+        <file>logs/log.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <fileNamePattern>log.log.%i</fileNamePattern>
         </rollingPolicy>
