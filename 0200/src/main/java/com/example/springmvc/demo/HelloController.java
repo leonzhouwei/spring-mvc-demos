@@ -23,4 +23,11 @@ public class HelloController {
 		return result;
 	}
 	
+	public static void main(String[] args) {
+		String result = "Hello ";
+		logger.debug("oops: " + result);
+		logger.info("oops: " + result);
+		logger.warn("oops: " + result);
+	}
+	
 }
