@@ -2,6 +2,8 @@
 <!DOCTYPE xml>
 
 <configuration debug="true">
+    <property name="LOG_FILE" value="log.log" />
+    
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d [%thread | %logger.%method\(%file:%line\)] %-5level - %msg%n</pattern>
@@ -13,9 +15,9 @@
         <encoder>
             <pattern>%d [%thread | %logger.%method\(%file:%line\)] %-5level - %msg%n</pattern>
         </encoder>
-        <file>logs/log.log</file>
+        <file>logs/${LOG_FILE}</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <fileNamePattern>log.log.%i</fileNamePattern>
+            <fileNamePattern>${LOG_FILE}.%i</fileNamePattern>
         </rollingPolicy>
         <triggeringPolicy
             class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
